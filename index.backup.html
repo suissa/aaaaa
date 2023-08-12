@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZapWallet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#28A00A',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      margin:0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Robot', sans-serif;
+      font-size: 18px;
+    }
+    body h2 {
+      font-size: 3rem;
+    }
+    @media screen {
+      
+    }
+    #outer {
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      min-height: 100vh;
+    }
+    #home-top-video:before {
+      content:"";
+      position: absolute;
+      top:0;
+      right:0;
+      left:0;
+      bottom:0;
+      z-index:1;
+      background:linear-gradient(to right,rgba(13, 131, 0, 0.4),rgba(4, 240, 102, 0.3));
+    }
+    #home-top-video {
+      left: 0%;
+      top: 0%;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      z-index: -1;
+    }
+
+    #home-text {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      color: #fff;
+      z-index:1;
+    }
+    #zapwallet-text {
+      font-family: 'Oswald', sans-serif;
+      background: url("./images/icon-zap.png") no-repeat;
+      background-size: 100px;
+      padding-left: 100px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      display: block;
+      width: 350px;
+      margin: 0 auto;
+    }
+    #zapwallet-icon {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+    
+    #color-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      background:linear-gradient(to top,rgba(13, 131, 0, 0.9),rgba(4, 240, 102, 0.8));
+    }
+    #text-top {
+      margin-top: 50px;
+      max-width: 400px;
+      
+    }
+    #btn-saiba-mais {
+      width: 200px;
+      margin: 0 auto;
+      margin-top: 50px;
+      display: block;
+      text-align: center;
+    }
+
+    #text-color-overlay {
+      padding: 50px 20px;
+      color: #fff;
+      background:linear-gradient(to bottom,rgba(17, 128, 4, 1),rgba(0, 150, 63, 1));
+      margin-top: -2px;
+    }
+    .brand {
+
+      align-items: center;
+      display: flex;
+      font-size: 22px;
+      line-height: 36px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+    .brand img {
+      width: 60px;
+      height: 60px;
+    }
+    @media (max-height: 600px) {
+
+      h2 {
+        font-size: 14px;
+      }
+      .grid div{
+        width: 100%;
+      }
+      #btn-saiba-mais {
+        width: 160px;
+        text-align: center;
+        display: block;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header class="relative flex items-center justify-center h-screen overflow-hidden">
+    <div id="home-text" class="">
+      <!-- <img class="inline-block	" id="zapwallet-icon" src="./images/WhatsApp.svg.png" alt=""> -->
+      <div class="center">
+        <h1 id="zapwallet-text" class="inline-block	text-6xl font-bold">ZapWallet</h1>
+      </div>
+      <div id="text-top" class="text-center">
+        <p class="text-4xl">Seu dinheiro seguro com  a facilidade do WhatsApp</p>
+      </div>
+      <div>
+        <a href="https://wa.me/5511994649923" id="btn-saiba-mais" class="inline-block px-8 py-4 mt-8 text-lg font-semibold text-white bg-clifford rounded-full">Saiba mais</a>
+      </div>
+    </div>
+
+    <div id="home-top-video">
+      <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none">
+        <!-- <source src="./video_golden_-_48569 (1080p).mp4" type="video/mp4" /> -->
+        <source src="./videos/piggy_-_12922 (720p).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div id="color-overlay">
+
+    </div>
+  </header>
+  <main id="text-color-overlay">
+    <div class="container mx-auto">
+      <div class="lg:flex">
+        <!-- Coluna 100% no mobile e metade da largura em telas grandes -->
+        <div class="w-full lg:w-1/2">
+          <!-- Conteúdo da coluna aqui -->
+          <div class="">
+            <h2>Sobre o projeto</h2>
+            Multifunctional alternative Telegram client with advanced functionality and DeFi & AI tools.
+            iMe expands the official client functionality and implements its own technologies that become available to users all over the world.
+            The low entrance threshold into the industry of Cryptocurrencies and Artificial Intelligence through the structure of the Telegram messenger makes iMe an attractive and convenient platform for both ordinary and professional users.
+          </div>
+
+          
+        </div>
+        
+        <!-- Outra coluna -->
+        <div class="w-full lg:w-1/2">
+          <!-- Conteúdo da outra coluna aqui -->
+          <div class="grid grid-cols-2 gap-8">
+            <div class="">
+              <h2>Integrações & Tecnologias</h2>
+              <div class="grid grid-cols-2 gap-4">
+                  <div>
+                    <div class="brand">
+                    <img src="./images/icon_logo-whatsapp.png" alt="WhatsApp">
+                    <div>WhatsApp</div>
+                  </div>
+                  <div class="brand">
+                    <img src="./images/icon_nodejs.png" alt="telegram">
+                    <div>Node.js</div>
+                  </div>
+                  <div class="brand">
+                    <img class="w-24" src="./images/wa-automate-nodejs.png" alt="Node.js wa automate nodejs">
+                    <div>wa-automate-nodejs</div>
+                  </div>
+                  <div class="brand">
+                    <img src="https://www.imem.app/static/media/aws.3e3e7ef59405642d4ce2bc6c29d36caa.svg" alt="telegram">
+                    <div>Amazon AWS</div>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <div class="brand">
+                    <img src="https://www.imem.app/static/media/bnb.b1b50c3e74db963bb3313dbad3a31855.svg" alt="telegram">
+                    <div>BNB Chain</div>
+                  </div>
+                  <div class="brand">
+                    <img src="https://www.imem.app/static/media/ethereum.6c4516d5178e47556267fa5ebe96c04c.svg" alt="telegram">
+                    <div>Ethereum Blockchain</div>
+                  </div>
+                  <div class="brand">
+                    <img src="https://www.imem.app/static/media/uniswap.82d1d082091390bd79dd47383ad70264.svg" alt="telegram">
+                    <div>Uniswap</div>
+                  </div>
+                  <div class="brand">
+                    <img src="https://www.imem.app/static/media/pancake.9d90c0655466fa42a6cbfa59a0434ce7.svg" alt="telegram">
+                    <div>PancakeSwap</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+</body>
+</html>
