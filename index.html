@@ -14,7 +14,7 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#28A00A',
+            clifford: '#28BE0A',
           }
         }
       }
@@ -33,6 +33,12 @@
         text-align: center;
         /* margin-top: 20px; */
         margin-bottom: 20px;
+    }
+    nav {
+      /* background: transparent;
+      position: absolute;
+      color: #fff; */
+      z-index: 999;
     }
     body footer {
       font-size: 14px;
@@ -172,6 +178,33 @@
 
 </head>
 <body>
+  <nav class="bg-transparent p-4 absolute top-0 w-full p-4">
+    <div class="flex items-center justify-end">
+      <!-- <div class="flex items-center">
+        <a href="#" class="text-white text-lg font-semibold">Logo</a>
+      </div> -->
+      <div class="hidden md:flex space-x-4">
+        <a href="#" class="text-white">Home</a>
+        <a href="#" class="text-white">Sobre</a>
+        <a href="#" class="text-white">Serviços</a>
+        <a href="#" class="text-white">Contato</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-white">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden space-y-2 pt-4 text-right">
+      <a href="#" class="block text-white">Home</a>
+      <a href="#" class="block text-white">Sobre</a>
+      <a href="#" class="block text-white">Serviços</a>
+      <a href="#" class="block text-white">Contato</a>
+    </div>
+  </nav>
+
   <header class="relative flex items-center justify-center h-screen overflow-hidden">
     <div id="home-text" class="">
       <!-- <img class="inline-block	" id="zapwallet-icon" src="./images/WhatsApp.svg.png" alt=""> -->
@@ -389,6 +422,9 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
   </script>
 </body>
 </html>
