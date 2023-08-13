@@ -191,9 +191,12 @@
       font-size: 40px !important;
     }
     .our-coin {
-      color: #000;
+      color: #383838;
       font-weight: bold;
       /* margin-bottom: 100px; */
+    }
+    .text-gray {
+      color: #383838;
     }
 
     .coin-item {
@@ -224,6 +227,32 @@
     .depoimento-image {
       width: 20%;
     }
+
+    #container-nosso-time h4 {
+      font-family: "Lora",serif;
+      font-weight: bold;
+      font-size: 26px;
+      color: #323232;
+      margin-top: 10px;
+    }
+    #container-nosso-time h5 {
+      font-family: "Lora",serif;
+      font-weight: bold;
+      font-size: 20px;
+      color: #646464;
+      margin-top: 10px;
+    }
+    #container-nosso-time p {
+      font-family: "Roboto",sans-serif;
+      font-size: 16px;
+      color: #959595;
+      margin-top: 10px;
+    }10px
+    
+
+
+
+
     html body .cog-form__container {
       background-color: transparent;
       width: 100%;
