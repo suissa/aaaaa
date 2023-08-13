@@ -154,6 +154,9 @@
       width: 60px;
       height: 60px;
     }
+    .brand div {
+      padding-left: 20px;
+    }
     
     .content {
       padding: 50px 0;
@@ -211,6 +214,9 @@
       height: 120px;
       width: 250px;
       margin: 0;
+    }
+    #container-depoimentos h2 {
+      display: block;
     }
     .depoimento {
       height: 400px;
