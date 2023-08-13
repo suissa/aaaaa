@@ -140,13 +140,21 @@
       text-align: center;
     }
     body .btn-green-dark {
-      width: 300px;
+      /* color: #000; */
+      width: 100%;
       margin: 0 auto;
       margin-top: 50px;
       display: block;
       text-align: center;
-      background: rgba(13, 131, 0, 1);
-      height: 100px;
+      background:linear-gradient(to bottom,rgba(13, 131, 0, 1),rgba(4, 240, 102, 1));
+      height: 200px;
+      max-width: 300px;
+      line-height: 35px;
+      padding-top: 60px;
+      /* background: url("./images/bg-0green-02.jpg") no-repeat; */
+      /* background-size: cover; */
+      /* background-position: 0 20px; */
+      filter: brightness(0.7);
     }
 
     .text-color-overlay {
@@ -170,19 +178,20 @@
     }
     
     .content {
-      padding: 50px 20px;
+      padding: 50px 0;
       color: #004205;
       background:#fff;
       margin-top: -2px;
       width: 100%;
+      overflow: hidden;
     }
     
     #container-icons {
       color: #fff;
       background-color: rgba(0, 150, 63, 1);
       width: 100vw;
-      margin-left: -20px;
-      padding: 200px 0;
+      /* margin-left: -20px; */
+      padding: 100px 0;
     }
 
     #container-coins {
@@ -344,7 +353,7 @@
   
   <div class="content">
 
-    <div class="lg:flex my-32">
+    <div class="lg:flex my-12">
       <div class="w-full lg:w-1/2">
         <div>
           <h2 class="pt-10">Eco-sistema ZapWallet</h2>
@@ -385,37 +394,39 @@
       </div>
     </div>
 
-    <div id="container-icons" class="text-color-overlay" class="flex flex-col justify-center items-center my-6 md:my-28 py-8 md:py-32">
+    <div id="container-icons" class="text-color-overlay flex flex-col justify-center items-center my-6 md:my-28 py-8 md:py-8">
       <div class="flex flex-wrap justify-center">
-        <div data-aos="zoom-in" class="w-full sm:w-1/2 md:w-1/3 text-center my-4 px-4">
-          <i class="fab fa-bitcoin text-3xl mb-2"></i>
-          <p class="text-xl md:text-3xl">Send crypto to any friend by @username</p>
-        </div>
-        <div data-aos="zoom-in" class="w-full sm:w-1/2 md:w-1/3 text-center my-4 px-4">
+        <div data-aos="zoom-in" class="w-full sm:w-1/2 md:w-1/3 text-center px-24 py-16 md:pl-10 md:pr-10 px-4">
           <i class="fas fa-exchange-alt text-3xl mb-2"></i>
-          <p class="text-xl md:text-3xl">Exchange crypto to other crypto</p>
+          <p class="text-xl md:text-3xl">Troque criptomoedas por outras criptomoedas</p>
         </div>
-        <div data-aos="zoom-in" class="w-full sm:w-1/2 md:w-1/3 text-center my-4 px-4">
+        <div data-aos="zoom-in" class="w-full sm:w-1/2 md:w-1/3 text-center px-24 py-16 px-4">
           <i class="fas fa-shopping-cart text-3xl mb-2"></i>
-          <p class="text-xl md:text-3xl">Buy and sell crypto</p>
+          <p class="text-xl md:text-3xl">Envie, receba e gerencie suas criptomoedas</p>
         </div>
-        <div data-aos="zoom-in" class="w-full sm:w-1/2 md:w-1/3 text-center my-4 px-4">
-          <i class="fas fa-bell text-3xl mb-2"></i>
-          <p class="text-xl md:text-3xl">Get instant notifications about course rates and transactions on your wallet</p>
-        </div>
-        <div data-aos="zoom-in" class="w-full sm:w-1/2 md:w-1/3 text-center my-4 px-4">
+        <div data-aos="zoom-in" class="w-full sm:w-1/2 md:w-1/3 text-center px-24 py-16 md:pr-10 px-4">
           <i class="fas fa-mobile-alt text-3xl mb-2"></i>
-          <p class="text-xl md:text-3xl">Use any of your devices with the same account. We are cross-platform</p>
+          <p class="text-xl md:text-3xl">Envie, receba e gerencie seus tokens</p>
         </div>
-        <div data-aos="zoom-in" class="w-full sm:w-1/2 md:w-1/3 text-center my-4 px-4">
+        <div data-aos="zoom-in" class="w-full sm:w-1/2 md:w-1/3 text-center px-24 py-16 md:pl-10 px-4">
+          <i class="fab fa-bitcoin text-3xl mb-2"></i>
+          <p class="text-xl md:text-3xl">Envie criptomoedas para qualquer amigo através do seu contato</p>
+        </div>
+        <div data-aos="zoom-in" class="w-full sm:w-1/2 md:w-1/3 text-center px-24 py-16 px-4">
+          <i class="fas fa-bell text-3xl mb-2"></i>
+          <p class="text-xl md:text-3xl">Receba notificações instantâneas sobre taxas e transações na sua carteira</p>
+        </div>
+        <div data-aos="zoom-in" class="w-full sm:w-1/2 md:w-1/3 text-center px-24 py-16 md:pr-10 px-4">
           <i class="fas fa-lock text-3xl mb-2"></i>
-          <p class="text-xl md:text-3xl">Be sure that we don't store your private keys on any of our servers</p>
+          <p class="text-xl md:text-3xl">Tenha certeza de que não armazenamos suas chaves privadas em nossos servidores</p>
         </div>
       </div>
     </div>
     
+
     
-    <div id="container-coins" class="flex flex-col justify-center items-center my-6 md:my-28 py-8 md:py-32">
+    
+    <div id="container-coins" class="flex flex-col justify-center items-center my-6 py-8">
       <h2 class="our-coin text-center">Nossas moedas</h2>
       <div class="flex flex-wrap justify-center">
         <div data-aos="zoom-in" class="mb-32 w-full sm:w-1/2 md:w-1/3 text-center my-4 px-4">
@@ -442,6 +453,7 @@
                   Envie uma mensagem para 11 99999-9999
               </div>
           </div>
+
           <div data-aos="flip-down" class="w-full md:w-1/2 lg:w-1/4 px-4 mb-4 flex justify-center items-center">
               <div class="btn-green-dark px-8 py-4 text-lg font-semibold text-white bg-clifford rounded-md flex flex-col items-center ">
                   2) Digitar 1 para se cadastrar
@@ -454,7 +466,7 @@
           </div>
           <div data-aos="flip-down" class="w-full md:w-1/2 lg:w-1/4 px-4 mb-4 flex justify-center items-center">
               <div class="btn-green-dark px-8 py-4 text-lg font-semibold text-white bg-clifford rounded-md flex flex-col items-center">
-                  4) Receba suas moedas
+                  4) Receba suas moedase seus tokens
               </div>
           </div>
       </div>
@@ -466,7 +478,7 @@
     
     
 
-    <p class="text-xs">©2023 ZapWallet</p>
+    <p class="text-xs text-right">©2023 ZapWallet</p>
     <footer class="container content-center m-0-auto mb-10">
       <div class="flex flex-col md:flex-row md:justify-between">
           <div class="p-2 md:w-1/4">
