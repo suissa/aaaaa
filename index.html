@@ -44,6 +44,7 @@
     body footer {
       font-size: 14px;
       font-family: 'Roboto', sans-serif;
+      color: #000;
     }
     body footer h3 {
       font-size: 18px;
@@ -208,6 +209,9 @@
         width: 160px;
         text-align: center;
         display: block;
+      }
+      footer {
+        padding: 50px;
       }
     }
   </style>
@@ -443,28 +447,33 @@
     
 
     <p class="text-xs">©2023 ZapWallet</p>
+    <footer class="container content-center m-0-auto mb-10">
+      <div class="flex flex-col md:flex-row md:justify-between">
+          <div class="p-2 md:w-1/4">
+              <!-- Conteúdo da primeira coluna, se houver -->
+          </div>
+          <div class="w-full md:w-1/4 md:p-4">
+              <h3>Principal</h3>
+              <p>ZapWallet™ é uma marca registrada</p>
+              <p>Sobre</p>
+              <p>Features</p>
+          </div>
+          <div class="w-full md:w-1/4 md:p-4">
+              <h3>Suporte</h3>
+              <p>Email</p>
+              <p>WhatsApp</p>
+              <p>Telefone</p>
+          </div>
+          <div class="p-2 md:w-1/4">
+              <!-- Conteúdo da última coluna, se houver -->
+          </div>
+      </div>
+    </footer>
   </div>
-  <footer class="container content-center m-0-auto mb-10">
-    
-    <div class="grid grid-cols-4 gap-4">
-      <div class="p-2 ">
-      </div>
-      <div>
-        <h3>Principal</h3>
-        <p>ZapWallet™ é uma marca registrada</p>
-        <p>Sobre</p>
-        <p>Features</p>
-      </div>
-      <div>
-        <h3>Suporte</h3>
-        <p>Email</p>
-        <p>WhatsApp</p>
-        <p>Telefone</p>
-      </div>
-      <div>
-      </div>
-    </div>
-  </footer>
+  
+
+
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
