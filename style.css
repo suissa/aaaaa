@@ -187,12 +187,9 @@ body .btn-green-dark {
   font-weight: bold;
   /* margin-bottom: 100px; */
 }
-/* .icon-coin {
-  width: 200px;
-  height: auto;
-  margin: 0 auto;
-  margin-bottom: 50px;
-} */
+.icon-coin {
+  width: 640px;
+}
 
 #icon-doric {
   width: 210px;
