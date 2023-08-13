@@ -229,6 +229,13 @@
       width: 100%;
       max-width: 300px;
     }
+
+
+    html .fas,
+    html .fab {
+      font-size: 80px !important;
+      margin-bottom: 20px;
+    }
     html body .cog-cognito--styled input[type=text],
     html body .cog-cognito--styled .el-textarea__inner {
       border-radius: 10px;
