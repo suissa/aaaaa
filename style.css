@@ -213,6 +213,9 @@ body .btn-green-dark {
 #icon-doric {
   width: 210px;
 }
+#coin-ethereum {
+  width: 270px;
+}
 /* .coin-item {
   display: flex;
   flex-direction: column;
