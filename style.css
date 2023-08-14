@@ -6,6 +6,16 @@ body {
   font-family: 'Robot', sans-serif;
   font-size: 18px;
 }
+body header {
+  /* background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,9,121,1) 20%, rgba(0,255,25,1) 100%); */
+
+  background: #06BE2D;
+  background: radial-gradient(at right center, #06BE2D, #210A86);
+  width: 100%;
+  height: auto;
+  color: #fff;
+}
 body h2 {
   font-size: 3rem;
     text-align: center;
@@ -68,6 +78,11 @@ body footer h3 {
   z-index: -1;
 }
 
+#sobre-o-projeto {
+  line-height: 40px;
+
+}
+
 #home-text {
   position: absolute;
   left: 50%;
@@ -107,6 +122,7 @@ body footer h3 {
 #text-top {
   margin-top: 50px;
   max-width: 400px;
+  width: 400px;
   
 }
 body .btn-green {
@@ -138,7 +154,8 @@ body .btn-green-dark {
 .text-color-overlay {
   padding: 50px 20px;
   color: #fff;
-  background:linear-gradient(to bottom,rgba(17, 128, 4, 1),rgba(0, 150, 63, 1));
+  /* background:linear-gradient(to bottom,rgba(17, 128, 4, 1),rgba(0, 150, 63, 1)); */
+  background: #2d2d93;
   margin-top: -2px;
 }
 .brand {
@@ -160,7 +177,8 @@ body .btn-green-dark {
 
 .content {
   padding: 50px 0;
-  color: #004205;
+  /* color: #2d2d93; */
+  color: #000;
   background:#fff;
   margin-top: -2px;
   width: 100%;
@@ -169,7 +187,8 @@ body .btn-green-dark {
 
 #container-icons {
   color: #fff;
-  background-color: rgba(0, 150, 63, 1);
+  /* background-color: rgba(0, 150, 63, 1); */
+  background-color: #2d2d93;
   width: 100vw;
   /* margin-left: -20px; */
   padding: 100px 0;
@@ -247,7 +266,7 @@ body .btn-green-dark {
   font-size: 16px;
   color: #959595;
   margin-top: 10px;
-}10px
+}
 
 
 
@@ -279,7 +298,10 @@ html body .cog-cognito--styled .el-textarea__inner {
   width: 100%;
 } */
 @media (max-width: 600px) {
-
+ body header {
+    background: #06BE2D;
+    background: radial-gradient(at center top, #06BE2D, #210A86);
+  }
   h2 {
     font-size: 14px;
     text-align: center;
