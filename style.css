@@ -131,6 +131,9 @@ body .btn-green {
   margin-top: 50px;
   display: block;
   text-align: center;
+  background: rgb(2,0,36);
+  background: linear-gradient(270deg, rgb(61, 103, 186) 0%, rgb(63, 150, 72) 100%);
+
 }
 body .btn-green-dark {
   /* color: #000; */
