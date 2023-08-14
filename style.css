@@ -52,31 +52,11 @@ body footer h3 {
   font-size: 22px;
   margin-bottom: 20px;
 }
-#outer {
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  min-height: 100vh;
+
+#celular-01 {
+  width: 70%;
 }
-#home-top-video:before {
-  content:"";
-  position: absolute;
-  top:0;
-  right:0;
-  left:0;
-  bottom:0;
-  z-index:1;
-  background:linear-gradient(to right,rgba(13, 131, 0, 0.4),rgba(4, 240, 102, 0.3));
-}
-#home-top-video {
-  left: 0%;
-  top: 0%;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  z-index: -1;
-}
+
 
 #sobre-o-projeto {
   line-height: 40px;
@@ -132,7 +112,7 @@ body .btn-green {
   display: block;
   text-align: center;
   background: rgb(2,0,36);
-  background: linear-gradient(270deg, rgb(61, 103, 186) 0%, rgb(63, 150, 72) 100%);
+  background: linear-gradient(270deg, rgb(94, 126, 190) 0%, rgb(124, 203, 132) 100%);
 
 }
 body .btn-green-dark {
