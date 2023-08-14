@@ -139,7 +139,7 @@ body .btn-green-dark {
   margin-top: 50px;
   display: block;
   text-align: center;
-  background: rgb(0, 136, 18);
+  background: #2d2d93;
   /* background:linear-gradient(to bottom,rgba(13, 131, 0, 1),rgba(4, 240, 102, 1)); */
   height: 200px;
   max-width: 300px;
