@@ -18,7 +18,7 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#2d2d93',
+            clifford: '#28BE0A',
           }
         }
       }
@@ -28,12 +28,9 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://kit.fontawesome.com/628b18c337.js" crossorigin="anonymous"></script>
 </head>
-<body class="text-color-overlay">
-  <nav class="bg-transparent p-4 absolute top-0 w-full p-4">
+<body>
+  <!-- <nav class="bg-transparent p-4 absolute top-0 w-full p-4">
     <div class="flex items-center justify-end">
-      <!-- <div class="flex items-center">
-        <a href="#" class="text-white text-lg font-semibold">Logo</a>
-      </div> -->
       <div class="hidden md:flex space-x-4 text-center">
         <a href="#" class="text-white">Home</a>
         <a href="#" class="text-white">Sobre</a>
@@ -54,7 +51,7 @@
       <a href="#" class="block text-white">Serviços</a>
       <a href="#" class="block text-white">Contato</a>
     </div>
-  </nav>
+  </nav> -->
 
   <header class="header relative flex items-center justify-center h-screen overflow-hidden">
     <div class="flex flex-col justify-between h-full w-full mx-4 md:flex-row md:mx-0">
@@ -91,23 +88,21 @@
       </div>
     </div>
   </header>
-
   <main class="text-color-overlay">
     <div class=" mx-auto">
       <div class="lg:flex">
         <div class="w-full lg:w-1/2">
           <h2 class="text-2xl md:text-3xl lg:text-4xl mb-4">Sobre o projeto</h2>
-          <div id="sobre-o-projeto" class="h2-text md:px-16 mb-20 text-apresentacao" data-aos="fade-up">
+          <div class="h2-text md:px-16 mb-20 text-apresentacao" data-aos="fade-up">
             ZapWallet é um projeto de carteira de criptomoedas via WhatsApp, oferecendo um sistema 
             alternativo multifuncional para WhatsApp com funcionalidades avançadas. 
-             A facilidade de entrada na indústria de criptomoedas 
+            O ZapWallet amplia a funcionalidade do cliente oficial e implementa suas próprias tecnologias, 
+            disponíveis para usuários em todo o mundo. A facilidade de entrada na indústria de criptomoedas 
             por meio da estrutura do mensageiro WhatsApp torna o ZapWallet uma 
             plataforma atrativa e conveniente tanto para usuários comuns quanto profissionais.  
           </div>
         </div>
-        <!-- O ZapWallet amplia a funcionalidade do cliente oficial e implementa suas próprias tecnologias, 
-        disponíveis para usuários em todo o mundo. -->
-
+  
         <div class="w-full lg:w-1/2 mt-4 lg:mt-0">
           <h2 class="text-2xl md:text-3xl lg:text-4xl mb-4">Integrações & Tecnologias</h2>
           <div class="grid grid-cols-2 gap-4" data-aos="fade-up">
@@ -124,16 +119,16 @@
               <div>wa automate</div>
             </div>
             <div class="brand">
-              <img src="https://www.imem.app/static/media/aws.3e3e7ef59405642d4ce2bc6c29d36caa.svg" alt="Amazon AWS">
-              <div>Amazon AWS</div>
+              <img src="https://www.imem.app/static/media/ethereum.6c4516d5178e47556267fa5ebe96c04c.svg" alt="Ethereum Blockchain">
+              <div>Ethereum Blockchain</div>
             </div>
-            <div class="brand">
+            <!-- <div class="brand">
               <img src="https://www.imem.app/static/media/bnb.b1b50c3e74db963bb3313dbad3a31855.svg" alt="BNB Chain">
               <div>BNB Chain</div>
             </div>
             <div class="brand">
-              <img src="https://www.imem.app/static/media/ethereum.6c4516d5178e47556267fa5ebe96c04c.svg" alt="Ethereum Blockchain">
-              <div>Ethereum Blockchain</div>
+              <img src="https://www.imem.app/static/media/aws.3e3e7ef59405642d4ce2bc6c29d36caa.svg" alt="Amazon AWS">
+              <div>Amazon AWS</div>
             </div>
             <div class="brand">
               <img src="https://www.imem.app/static/media/uniswap.82d1d082091390bd79dd47383ad70264.svg" alt="Uniswap">
@@ -142,14 +137,14 @@
             <div class="brand">
               <img src="https://www.imem.app/static/media/pancake.9d90c0655466fa42a6cbfa59a0434ce7.svg" alt="Pancake Swap">
               <div>Pancake Swap</div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
   </main>
   
-  <div class="content">
+  <div class="">
 
     <div class="lg:flex my-12">
       <div class="w-full lg:w-1/2">
@@ -192,7 +187,7 @@
       </div>
     </div>
 
-    <div id="container-icons" class="text-color-overlay flex flex-col justify-center items-center my-6 py-8 md:py-8">
+    <div id="container-icons" class="text-color-overlay flex flex-col justify-center items-center my-6 md:my-28 py-8 md:py-8">
       <div class="flex flex-wrap justify-center">
         <div data-aos="zoom-in" class="w-full sm:w-1/2 md:w-1/3 text-center px-24 py-16 md:pl-10 md:pr-10 px-4">
           <i class="fas fa-exchange-alt text-3xl mb-2"></i>
@@ -225,30 +220,31 @@
     
     
     <div id="container-coins" class="flex flex-col justify-center items-center my-6 py-8">
-      <h2 class="our-coin text-center mb-20">Nossas moedas</h2>
-      <div class="flex flex-wrap justify-center">
-        <div data-aos="zoom-in" class=" w-full sm:w-1/2 md:w-1/3 text-center my-4 px-2 md:px-4 md:mx-8">
+      <h2 class="our-coin text-center text-white mb-20">Nossas moedas</h2>
+      <div class="flex flex-wrap justify-center mb-20">
+        <div data-aos="zoom-in" class="w-full sm:w-1/2 md:w-1/3 text-center my-4 px-2 md:px-4 md:mx-8 md:mt-20">
           <div class="coin-item">
-            <img class="icon-coin mx-auto" id="coin-ethereum" src="./images/ethereum-eth-logo.png" alt="Ethereum">
-            <p class="coin-name text-white text-2xl md:text-3xl mt-4">Ethereum</p>
+            <img id="icon-ethereum" class="icon-coin mx-auto h-auto" src="./images/ethereum-eth-logo.png" alt="Ethereum">
+            <p class="coin-name text-2xl md:text-3xl mt-4">Ethereum</p>
           </div>
         </div>
-        <div data-aos="zoom-in" class=" w-full sm:w-1/2 md:w-1/3 text-center my-4 px-2 md:px-4 md:mx-8">
+        <div data-aos="zoom-in" class="w-full sm:w-1/2 md:w-1/3 text-center my-4 px-2 md:px-4 md:mx-8 md:mt-10">
           <div class="coin-item">
-            <img id="icon-doric" class="icon-coin mx-auto h-auto" src="./images/logo-doric.png" alt="Doric">
-            <p class="coin-name text-white text-2xl md:text-3xl mt-4">Doric</p>
+            <img id="icon-doric" class="icon-coin mx-auto h-auto" src="./images/coin-artwork.png" alt="Doric">
+            <p class="coin-name text-2xl md:text-3xl mt-4">Doric</p>
           </div>
         </div>
-        <div data-aos="zoom-in" class=" w-full sm:w-1/2 md:w-1/3 text-center my-4 px-2 md:px-4 md:mx-8">
+      </div><div class="flex flex-wrap justify-center">
+        <div data-aos="zoom-in" class="w-full sm:w-1/2 md:w-1/3 text-center my-4 px-2 md:px-4 md:mx-8">
           <div class="coin-item">
-            <img id="icon-doric" class="icon-coin mx-auto h-auto" src="./images/logo-tether.png" alt="Doric">
-            <p class="coin-name text-white text-2xl md:text-3xl mt-4">Dólar Tether</p>
+            <img id="icon-matic" class="icon-coin mx-auto h-auto" src="./images/logo-matic.png" alt="Ethereum">
+            <p class="coin-name text-2xl md:text-3xl mt-4">Ethereum</p>
           </div>
         </div>
-        <div data-aos="zoom-in" class=" w-full sm:w-1/2 md:w-1/3 text-center my-4 px-2 md:px-4 md:mx-8">
+        <div data-aos="zoom-in" class="w-full sm:w-1/2 md:w-1/3 text-center my-4 px-2 md:px-4 md:mx-8">
           <div class="coin-item">
-            <img id="icon-doric" class="icon-coin mx-auto h-auto" src="./images/logo-matic.png" alt="Matic">
-            <p class="coin-name text-white text-2xl md:text-3xl mt-4">Matic</p>
+            <img id="icon-tether" class="icon-coin mx-auto h-auto" src="./images/logo-tether.png" alt="Doric">
+            <p class="coin-name text-2xl md:text-3xl mt-4">Tether</p>
           </div>
         </div>
       </div>
@@ -313,7 +309,7 @@
       
       <div class="flex flex-wrap justify-center">
         <div data-aos="zoom-in" class="w-full md:w-1/2 lg:w-1/4 px-4 mb-4 flex justify-center items-start">
-          <div class="px-4 py-4 text-lg font-semibold text-black overflow-hidden flex flex-col items-center">
+          <div class="px-8 py-4 text-lg font-semibold text-black overflow-hidden flex flex-col items-center">
             <img class="rounded-full w-32 h-32 object-cover mb-4" src="./images/eu-rave.jpeg" alt="">
             <h4 class="mb-2">
               Suissa
@@ -326,7 +322,7 @@
         </div>
         
         <div data-aos="zoom-in" class="w-full md:w-1/2 lg:w-1/4 px-4 mb-4 flex justify-center items-start">
-          <div class="px-4 py-4 text-lg font-semibold text-black overflow-hidden flex flex-col items-center">
+          <div class="px-8 py-4 text-lg font-semibold text-black overflow-hidden flex flex-col items-center">
             <img class="rounded-full w-32 h-32 object-cover mb-4" src="./images/everton.png" alt="">
             <h4 class="mb-2">
               Everton
